@@ -1,0 +1,13 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Assistance et cours à domicile</title>
+  <desc id="desc">Technicien aidant un utilisateur devant un écran</desc>
+  <rect width="96" height="96" rx="22" fill="#F5F7FB"/>
+  <circle cx="36" cy="32" r="8" fill="#38BDF8" stroke="#111827" stroke-width="4"/>
+  <path d="M23 62C24.2 49.5 28.5 44 36 44C43.5 44 47.8 49.5 49 62" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <path d="M50 24H73V50H50V24Z" fill="white" stroke="#111827" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M54 56H69" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <path d="M61.5 50V56" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <path d="M55 37H68" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M61.5 30V44" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M44 48L53 42" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+</svg>

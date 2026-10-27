@@ -1,0 +1,47 @@
+# Mick Computer - configuration Apache (OVH)
+# Déployé automatiquement depuis GitHub
+
+Options -Indexes
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Bloquer l'accès aux fichiers techniques du dépôt Git
+RewriteRule (^|/)\.git(/|$) - [F,L]
+RewriteRule ^(README\.md|DEPLOIEMENT\.md|\.github/.*)$ - [F,L]
+
+# HTTPS + www obligatoires (une seule redirection 301)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.mickcomputer.com/$1 [R=301,L]
+
+# /index.html -> / (évite le contenu dupliqué pour Google)
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://www.mickcomputer.com/ [R=301,L]
+</IfModule>
+
+# En-têtes de sécurité
+<IfModule mod_headers.c>
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+</IfModule>
+
+# Cache navigateur : HTML court (mises à jour visibles vite), fichiers statiques longs
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/html "access plus 10 minutes"
+ExpiresByType text/css "access plus 7 days"
+ExpiresByType application/javascript "access plus 7 days"
+ExpiresByType text/javascript "access plus 7 days"
+ExpiresByType image/svg+xml "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/jpeg "access plus 30 days"
+</IfModule>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript image/svg+xml application/xml text/plain
+</IfModule>

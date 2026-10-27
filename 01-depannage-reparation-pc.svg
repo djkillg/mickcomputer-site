@@ -1,0 +1,10 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Dépannage et réparation PC</title>
+  <desc id="desc">Icône ordinateur portable avec clé de réparation</desc>
+  <rect width="96" height="96" rx="22" fill="#F5F7FB"/>
+  <path d="M24 30C24 27.7909 25.7909 26 28 26H60C62.2091 26 64 27.7909 64 30V54H24V30Z" stroke="#111827" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M20 58H68L74 66H14L20 58Z" stroke="#111827" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M61.5 26.5L69.5 18.5L77.5 26.5L69.5 34.5L61.5 26.5Z" fill="#38BDF8" stroke="#111827" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M68.5 33.5L57 45" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <path d="M54 48L50 52" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+</svg>

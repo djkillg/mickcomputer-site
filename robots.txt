@@ -1,0 +1,45 @@
+# robots.txt - Mick Computer
+# Dépannage informatique à domicile en Wallonie
+
+User-agent: *
+Allow: /
+Disallow: /merci.html
+
+# ---------------------------------------------------------------
+# Moteurs de recherche et assistants IA : accès explicitement
+# autorisé (indexation et citation du site souhaitées).
+# ---------------------------------------------------------------
+
+User-agent: GPTBot
+Allow: /
+Disallow: /merci.html
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /merci.html
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /merci.html
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /merci.html
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /merci.html
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /merci.html
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /merci.html
+
+User-agent: CCBot
+Allow: /
+Disallow: /merci.html
+
+Sitemap: https://www.mickcomputer.com/sitemap.xml
